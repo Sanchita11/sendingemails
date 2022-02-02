@@ -14,7 +14,7 @@ email['subject'] = 'xyz subject'  ## Subject of email
 email.set_content("Xyz content of email") ## content of email
 
 with smtlib.SMTP(host='smtp.gmail.com',port=587)as smtp:     
-    
+     
     smtp.ehlo()          ## server object
     
 smtp.starttls()      ## used to send data between server and client
